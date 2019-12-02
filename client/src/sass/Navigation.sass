@@ -1,0 +1,33 @@
+@import 'Main'
+
+nav
+  margin-top: 25px
+  user-select: none
+  &::after
+    display: table
+    content: ''
+    clear: both
+  ul
+    text-align: center
+    li
+      list-style: none
+      display: inline-block
+      margin-top: 20px
+      &:first-child
+        a
+          border: none
+          box-shadow: 0 0 1px 1px rgba(0,0,0,0.23)
+      a
+        text-decoration: none
+        font-family: $font-family
+        background: white
+        border: none
+        box-shadow: 0 0 1px 1px rgba(0,0,0,0.23)
+        color: $color
+        transition: 150ms all
+        padding: 20px
+        &:hover
+          background: $color
+          border-color: $color
+          color: white
+          transition: 150ms all
